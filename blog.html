@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Health Blog | Lumina Dental Care</title>
+  <meta name="description" content="Dental health tips, treatment guides and news from the Lumina Dental Care team.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="blog">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Blog</span></nav>
+        <h1>Smile smarter</h1>
+        <p class="lead">Practical dental health tips, treatment guides and answers to the questions we hear most, written by our dentists.</p>
+        <div class="search-input hero-search">
+          <span data-icon="search"></span>
+          <label class="visually-hidden" for="blog-search">Search articles</label>
+          <input type="search" id="blog-search" placeholder="Search articles…" autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="chips" id="blog-filters" role="group" aria-label="Filter by topic"></div>
+          <p class="result-count" id="blog-count" aria-live="polite"></p>
+        </div>
+        <div id="featured"></div>
+        <div class="grid grid-3" id="posts-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container" style="max-width:760px">
+        <div class="form-card text-center">
+          <span class="icon-badge" style="margin-inline:auto" data-icon="mail"></span>
+          <h2>Get one smile tip a month</h2>
+          <p class="muted">Seasonal advice, new articles and occasional patient-only offers.</p>
+          <form class="newsletter" data-newsletter novalidate style="max-width:520px;margin:1.5rem auto 0">
+            <div class="field"><label class="visually-hidden" for="blog-email">Email address</label><input type="email" id="blog-email" name="email" placeholder="you@example.com" required></div>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/blog.js" defer></script>
+</body>
+</html>

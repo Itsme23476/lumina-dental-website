@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequently Asked Questions | Lumina Dental Care</title>
+  <meta name="description" content="Answers to common questions about appointments, insurance, treatments, kids' dentistry and emergencies.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="faq">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero page-hero--dark">
+      <div class="container text-center">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content:center"><a href="index.html">Home</a><span>/</span><a href="patients.html">Patients</a><span>/</span><span aria-current="page">FAQ</span></nav>
+        <h1 style="margin-inline:auto">How can we help?</h1>
+        <p class="lead" style="margin-inline:auto">Search our most common questions, or browse by topic.</p>
+        <div class="search-input hero-search" style="margin-inline:auto">
+          <span data-icon="search"></span>
+          <label class="visually-hidden" for="faq-search">Search questions</label>
+          <input type="search" id="faq-search" placeholder="e.g. insurance, cancellation, whitening…" autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-layout">
+        <aside class="faq-side">
+          <div>
+            <h2 class="visually-hidden">Topics</h2>
+            <div class="faq-cats" id="faq-cats" role="group" aria-label="Filter by topic"></div>
+          </div>
+          <div class="card">
+            <span class="icon-badge icon-badge--sm" data-icon="phone"></span>
+            <h3 class="mt-1" style="font-size:1.1rem">Still need help?</h3>
+            <p style="font-size:.92rem">Our team is happy to answer any question.</p>
+            <div class="btn-group"><a class="btn btn-primary btn-sm" href="contact.html">Contact us</a><a class="btn btn-outline btn-sm" href="tel:+15550123456">Call</a></div>
+          </div>
+        </aside>
+        <div>
+          <div class="toolbar">
+            <p class="result-count" id="faq-count" aria-live="polite"></p>
+            <div class="btn-group"><button class="btn btn-ghost btn-sm" type="button" id="expand-all" data-icon="plus">Expand all</button><button class="btn btn-ghost btn-sm" type="button" id="collapse-all" data-icon="minus">Collapse all</button></div>
+          </div>
+          <div id="faq-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="cta-banner cta-banner--navy">
+          <div><h2>Didn't find your answer?</h2><p>Send us a message and we'll reply within one business day.</p></div>
+          <div class="btn-group"><a class="btn btn-accent btn-lg" href="contact.html?subject=general">Ask a question</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/faq.js" defer></script>
+</body>
+</html>

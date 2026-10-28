@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | Lumina Dental Care</title>
+  <meta name="description" content="Book your dental appointment online in about two minutes. Choose your treatment, dentist, date and time.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="book">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero" style="padding-bottom:2.5rem">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Book Appointment</span></nav>
+        <h1>Book your appointment</h1>
+        <p class="lead">Five quick steps, about two minutes. Prefer to talk? Call <a href="tel:+15550123456">(555) 012-3456</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2.5rem" id="booking-top">
+      <div class="container booking">
+        <div class="booking-main">
+          <ol class="progress" id="progress" aria-label="Booking progress">
+            <li><span>1. Treatment</span></li><li><span>2. Dentist</span></li><li><span>3. Date &amp; time</span></li><li><span>4. Your details</span></li><li><span>5. Confirm</span></li>
+          </ol>
+
+          <div class="step-panel" data-step="1">
+            <h2 tabindex="-1">What would you like to book?</h2>
+            <p class="muted">Choose a treatment. Not sure? Pick a check-up and we'll take it from there.</p>
+            <div class="search-input" style="max-width:420px"><span data-icon="search"></span><label class="visually-hidden" for="bk-search">Search treatments</label><input type="search" id="bk-search" placeholder="Search treatments…" autocomplete="off"></div>
+            <div id="service-options"></div>
+          </div>
+
+          <div class="step-panel" data-step="2" hidden>
+            <h2 tabindex="-1">Choose your dentist</h2>
+            <p class="muted" id="dentist-intro">These dentists offer your selected treatment.</p>
+            <div class="option-grid" id="dentist-options"></div>
+          </div>
+
+          <div class="step-panel" data-step="3" hidden>
+            <h2 tabindex="-1">Pick a date &amp; time</h2>
+            <p class="muted" id="date-intro">Available days are shown in the calendar.</p>
+            <div class="date-time">
+              <div class="calendar">
+                <div class="cal-head">
+                  <button class="icon-btn" type="button" id="cal-prev" aria-label="Previous month" data-icon="chevron-left"></button>
+                  <strong id="cal-title" aria-live="polite"></strong>
+                  <button class="icon-btn" type="button" id="cal-next" aria-label="Next month" data-icon="chevron-right"></button>
+                </div>
+                <div class="cal-grid" id="cal-grid"></div>
+                <div class="cal-legend"><span><i></i>Available</span><span><i class="sel"></i>Selected</span><span><i style="background:none;border:1px solid var(--line)"></i>Unavailable</span></div>
+              </div>
+              <div id="slots"><div class="empty" style="padding:2rem 1rem"><span data-icon="calendar"></span><p class="mb-0">Select a date to see available times.</p></div></div>
+            </div>
+          </div>
+
+          <div class="step-panel" data-step="4" hidden>
+            <h2 tabindex="-1">Your details</h2>
+            <p class="muted">We'll use these to confirm your appointment and complete online check-in.</p>
+            <form id="patient-form" novalidate>
+              <div class="form-grid">
+                <div class="field"><label for="p-first">First name <span class="req">*</span></label><input type="text" id="p-first" name="first" autocomplete="given-name" required></div>
+                <div class="field"><label for="p-last">Last name <span class="req">*</span></label><input type="text" id="p-last" name="last" autocomplete="family-name" required></div>
+                <div class="field"><label for="p-email">Email <span class="req">*</span></label><input type="email" id="p-email" name="email" autocomplete="email" required></div>
+                <div class="field"><label for="p-phone">Mobile phone <span class="req">*</span></label><input type="tel" id="p-phone" name="phone" autocomplete="tel" required placeholder="(555) 555-5555"></div>
+                <div class="field"><label for="p-dob">Date of birth <span class="req">*</span></label><input type="date" id="p-dob" name="dob" required data-past></div>
+                <div class="field"><label for="p-insurance">Insurance</label><select id="p-insurance" name="insurance"><option value="None / self-pay">None / self-pay</option></select></div>
+                <div class="field full"><span class="label">Have you visited us before? <span class="req">*</span></span>
+                  <div class="radio-group">
+                    <label class="radio"><input type="radio" name="patientType" value="New patient" required data-msg="Please let us know if you're a new patient."> I'm a new patient</label>
+                    <label class="radio"><input type="radio" name="patientType" value="Returning patient"> I've been here before</label>
+                  </div>
+                </div>
+                <div class="field full"><label for="p-notes">Anything we should know?</label><textarea id="p-notes" name="notes" placeholder="Symptoms, anxiety, accessibility needs, preferred name…" style="min-height:100px"></textarea></div>
+                <div class="field full"><label class="checkbox"><input type="checkbox" name="reminders" checked> Send me appointment reminders by text and email</label></div>
+                <div class="field full"><label class="checkbox"><input type="checkbox" name="consent" required data-msg="Please accept the policies to continue."> I agree to the <a href="patients.html#policies" target="_blank" rel="noopener">cancellation policy</a> and <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>.</label></div>
+              </div>
+            </form>
+          </div>
+
+          <div class="step-panel" data-step="5" hidden>
+            <h2 tabindex="-1">Review &amp; confirm</h2>
+            <p class="muted">Please check everything looks right.</p>
+            <div class="review-list" id="review-list"></div>
+            <div class="alert alert--info"><span data-icon="info"></span><p>Free cancellation up to 24 hours before your appointment. You'll receive a confirmation email right away.</p></div>
+          </div>
+
+          <div class="step-panel" data-step="6" hidden>
+            <div class="form-success">
+              <div class="success-icon" data-icon="check"></div>
+              <h2 tabindex="-1">You're booked!</h2>
+              <p class="muted" id="confirm-text"></p>
+              <div class="confirm-ref" id="confirm-ref"></div>
+              <div class="review-list" id="confirm-list" style="text-align:left"></div>
+              <div class="btn-group no-print" style="justify-content:center">
+                <button class="btn btn-primary" type="button" id="add-calendar" data-icon="download">Add to calendar</button>
+                <button class="btn btn-outline" type="button" id="print-booking" data-icon="printer">Print</button>
+                <button class="btn btn-outline" type="button" id="book-another" data-icon="refresh">Book another</button>
+                <a class="btn btn-ghost" href="index.html">Back to home</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wizard-nav no-print" id="wizard-nav">
+            <button class="btn btn-ghost" type="button" id="btn-back" data-icon="arrow-left">Back</button>
+            <button class="btn btn-accent" type="button" id="btn-next">Continue</button>
+          </div>
+        </div>
+
+        <aside class="booking-summary no-print" aria-label="Booking summary">
+          <div class="summary-card">
+            <h3>Your appointment</h3>
+            <ul class="summary-list" id="summary"></ul>
+          </div>
+          <div class="card summary-help">
+            <strong>Need help?</strong>
+            <p class="mb-0">Call <a href="tel:+15550123456">(555) 012-3456</a>. In pain? See our <a href="emergency.html">emergency guide</a>.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/book.js" defer></script>
+</body>
+</html>

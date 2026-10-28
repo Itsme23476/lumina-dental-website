@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical History Form | Lumina Dental Care</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/print-forms.css">
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../patients.html#forms"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to patient forms</a>
+    <span>Print this form, or save it as a PDF to fill in digitally.</span>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+  <main class="sheet">
+    <header>
+      <div><h1>Medical History</h1><p>Confidential. Your answers help us provide safe care.</p></div>
+      <div class="brand"><strong>Lumina Dental Care</strong>1200 Harbor Avenue, Suite 200<br>Springfield, ST 01234 · (555) 012-3456</div>
+    </header>
+
+    <div class="row"><div class="line"><span></span>Patient name</div><div class="line"><span></span>Date of birth</div></div>
+    <div class="row"><div class="line"><span></span>Physician name</div><div class="line"><span></span>Physician phone</div></div>
+
+    <h2>General health</h2>
+    <div class="yn">
+      <span></span><strong>Yes</strong><strong>No</strong>
+      <span>Are you currently under a physician's care?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+      <span>Have you been hospitalized in the past 5 years?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+      <span>Are you pregnant or nursing?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+      <span>Do you smoke, vape or use tobacco?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+      <span>Do you need antibiotics before dental treatment?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+      <span>Do you feel anxious about dental visits?</span><span><span class="box"></span></span><span><span class="box"></span></span>
+    </div>
+
+    <h2>Do you have or have you had…</h2>
+    <div class="checks">
+      <label><span class="box"></span>Heart condition</label><label><span class="box"></span>High blood pressure</label><label><span class="box"></span>Artificial joint</label>
+      <label><span class="box"></span>Diabetes</label><label><span class="box"></span>Asthma</label><label><span class="box"></span>Bleeding disorder</label>
+      <label><span class="box"></span>Thyroid condition</label><label><span class="box"></span>Kidney disease</label><label><span class="box"></span>Liver disease</label>
+      <label><span class="box"></span>Hepatitis</label><label><span class="box"></span>Epilepsy / seizures</label><label><span class="box"></span>Cancer / radiation</label>
+      <label><span class="box"></span>Osteoporosis</label><label><span class="box"></span>Sleep apnea</label><label><span class="box"></span>Other</label>
+    </div>
+
+    <h2>Allergies</h2>
+    <div class="checks"><label><span class="box"></span>Penicillin</label><label><span class="box"></span>Local anesthetic</label><label><span class="box"></span>Latex</label><label><span class="box"></span>Aspirin / NSAIDs</label><label><span class="box"></span>Codeine</label><label><span class="box"></span>Other</label></div>
+    <div class="row" style="--cols:1"><div class="line"><span></span>Details of any allergies</div></div>
+
+    <h2>Current medications</h2>
+    <div class="row" style="--cols:1"><div class="line"><span></span>Medication, dose and frequency</div></div>
+    <div class="row" style="--cols:1"><div class="line"><span></span></div></div>
+    <div class="row" style="--cols:1"><div class="line"><span></span></div></div>
+
+    <h2>Signature</h2>
+    <p class="note">To the best of my knowledge, the information above is complete and accurate. I will inform the office of any changes to my health or medications.</p>
+    <div class="row"><div class="line"><span></span>Signature of patient (or parent/guardian)</div><div class="line"><span></span>Date</div></div>
+  </main>
+</body>
+</html>

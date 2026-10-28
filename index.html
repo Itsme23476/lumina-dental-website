@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumina Dental Care | Gentle, Modern Dentistry in Springfield</title>
+  <meta name="description" content="Lumina Dental Care offers gentle, modern family, cosmetic and emergency dentistry in Springfield. Book online in two minutes.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge badge--accent" data-icon="sparkle">Now welcoming new patients</span>
+          <h1>Healthy smiles start with <span class="hl">gentle care</span></h1>
+          <p class="lead">From routine cleanings to complete smile makeovers, Lumina Dental Care blends modern technology with a calm, judgment-free experience for the whole family.</p>
+          <div class="btn-group">
+            <a href="book.html" class="btn btn-accent btn-lg" data-icon="calendar">Book an Appointment</a>
+            <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+          </div>
+          <ul class="hero-points">
+            <li data-icon="check-circle">Same-day emergency care</li>
+            <li data-icon="check-circle">Most insurance accepted</li>
+            <li data-icon="check-circle">0% financing available</li>
+          </ul>
+          <form class="quick-book" id="quick-book" novalidate aria-label="Quick availability check">
+            <div>
+              <label for="qb-service">Treatment</label>
+              <select id="qb-service" name="service"><option value="">Not sure yet</option></select>
+            </div>
+            <div>
+              <label for="qb-date">Preferred date</label>
+              <input type="date" id="qb-date" name="date">
+            </div>
+            <button class="btn btn-primary" type="submit">Check availability</button>
+          </form>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="ring"></div>
+          <div class="blob"></div>
+          <svg class="hero-tooth" viewBox="0 0 200 240">
+            <defs><linearGradient id="toothGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d4f5ef"/></linearGradient></defs>
+            <path d="M70 18C38 18 16 40 16 76c0 32 12 48 16 80 4 34 12 72 30 72s18-46 30-62c4-6 12-6 16 0 12 16 12 62 30 62s26-38 30-72c4-32 16-48 16-80 0-36-22-58-54-58-10 0-18 6-30 6s-20-6-30-6z" fill="url(#toothGrad)"/>
+            <path d="M44 66c3-16 14-26 30-27" stroke="#fff" stroke-width="9" stroke-linecap="round" fill="none"/>
+            <path d="M166 24l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#fff"/>
+            <path d="M28 150l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#fff" opacity=".85"/>
+          </svg>
+          <div class="float-card float-card--1"><span class="icon-badge icon-badge--sm icon-badge--accent" data-icon="star"></span><div><strong>4.9 / 5 rating</strong>1,200+ patient reviews</div></div>
+          <div class="float-card float-card--2"><span class="icon-badge icon-badge--sm" data-icon="clock"></span><div><strong>Same-day visits</strong>Emergency slots daily</div></div>
+          <div class="float-card float-card--3"><span class="icon-badge icon-badge--sm" data-icon="heart"></span><div><strong>Comfort first</strong>Sedation options</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section aria-label="Highlights" style="border-bottom:1px solid var(--line)">
+      <div class="container trust-strip">
+        <div class="trust-item"><span class="icon-badge icon-badge--sm" data-icon="award"></span><div><strong>Since 2008</strong><span>18 years serving Springfield</span></div></div>
+        <div class="trust-item"><span class="icon-badge icon-badge--sm" data-icon="users"></span><div><strong>6 dentists</strong><span>General to specialist care</span></div></div>
+        <div class="trust-item"><span class="icon-badge icon-badge--sm" data-icon="shield-check"></span><div><strong>Hospital-grade</strong><span>Sterilization standards</span></div></div>
+        <div class="trust-item"><span class="icon-badge icon-badge--sm" data-icon="scan"></span><div><strong>3D digital imaging</strong><span>Precise, low radiation</span></div></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>Complete care for every smile</h2>
+          <p>Preventive, cosmetic, restorative and emergency dentistry under one roof, so your whole family can see the same trusted team.</p>
+        </div>
+        <div class="grid grid-3" id="home-services"></div>
+        <div class="center mt-2"><a class="btn btn-outline" href="services.html">View all 18 services</a></div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section--soft">
+      <div class="container split">
+        <div class="mock reveal" aria-hidden="true">
+          <div class="mock-card">
+            <div class="mock-head"><span class="icon-badge icon-badge--sm" data-icon="tooth"></span><div><strong>Your Smile Plan</strong><small>Prepared by Dr. Hart</small></div></div>
+            <ul class="mock-steps">
+              <li class="done" data-icon="check-circle">Comprehensive exam <span>Done</span></li>
+              <li class="done" data-icon="check-circle">Cleaning &amp; polish <span>Done</span></li>
+              <li class="next" data-icon="calendar">Whitening session <span>Next week</span></li>
+              <li data-icon="sparkle">6-month check-up <span>Spring</span></li>
+            </ul>
+            <div class="progress-bar"><span style="width:62%"></span></div>
+            <small class="muted">Plan 62% complete</small>
+          </div>
+          <div class="mock-chip" data-icon="shield-check"><div><strong>Insurance verified</strong>Est. coverage 80%</div></div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Why Lumina</span>
+          <h2>Dentistry that puts your comfort first</h2>
+          <p class="lead">We take the time to listen, explain every option and make sure you never feel rushed or judged.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="icon-badge" data-icon="heart"></span><div><h3>Anxiety-free experience</h3><p>Noise-cancelling headphones, warm blankets and sedation options for nervous patients.</p></div></div>
+            <div class="feature"><span class="icon-badge" data-icon="scan"></span><div><h3>Advanced technology</h3><p>Digital scans instead of messy impressions, 3D imaging and same-day treatment planning.</p></div></div>
+            <div class="feature"><span class="icon-badge" data-icon="tag"></span><div><h3>Transparent pricing</h3><p>Clear cost estimates before any treatment, plus financing and membership plans.</p></div></div>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="team.html">Meet our team</a>
+            <a class="btn btn-ghost" href="about.html">Our story <span data-icon="arrow-right"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section--dark section--tight">
+      <div class="container stats">
+        <div class="stat"><strong data-count="18">18</strong><span>Years of caring for Springfield</span></div>
+        <div class="stat"><strong data-count="12000" data-suffix="+">12,000+</strong><span>Happy patients</span></div>
+        <div class="stat"><strong data-count="4.9">4.9</strong><span>Average patient rating</span></div>
+        <div class="stat"><strong data-count="98" data-suffix="%">98%</strong><span>Would recommend us</span></div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Getting started</span>
+          <h2>Your first visit, step by step</h2>
+          <p>No surprises. Here is exactly what happens when you join Lumina.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Book online or call</h3><p>Pick a time that suits you. It takes about two minutes.</p></div>
+          <div class="step reveal"><h3>Comprehensive exam</h3><p>A thorough check, digital X-rays and a gentle cleaning.</p></div>
+          <div class="step reveal"><h3>Personal care plan</h3><p>We explain findings, options and costs in plain language.</p></div>
+          <div class="step reveal"><h3>Ongoing care</h3><p>Reminders, check-ups and treatment on your schedule.</p></div>
+        </div>
+        <div class="center mt-2"><a class="link-arrow" href="patients.html">Read the new patient guide <span data-icon="arrow-right"></span></a></div>
+      </div>
+    </section>
+
+    <!-- Gallery teaser -->
+    <section class="section section--mint">
+      <div class="container split split--reverse">
+        <div class="compare-frame reveal" id="home-compare"></div>
+        <div class="reveal">
+          <span class="eyebrow">Smile gallery</span>
+          <h2>Real transformations, beautiful results</h2>
+          <p class="lead">Drag the slider to see how whitening can lift years of staining in a single visit. Explore more veneer, aligner and implant results in our gallery.</p>
+          <ul class="check-list">
+            <li data-icon="check">Digital previews before treatment</li>
+            <li data-icon="check">Natural-looking, long-lasting results</li>
+            <li data-icon="check">Free cosmetic consultations</li>
+          </ul>
+          <a class="btn btn-primary" href="gallery.html">View the smile gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team preview -->
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="section-head section-head--left mb-0" style="margin-bottom:0">
+            <span class="eyebrow">Our dentists</span>
+            <h2 class="mb-0">Meet your care team</h2>
+          </div>
+          <a class="btn btn-outline" href="team.html">Meet the full team</a>
+        </div>
+        <div class="grid grid-3" id="home-team"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Loved by patients across Springfield</h2>
+        </div>
+        <div class="carousel" id="testimonials" aria-roledescription="carousel" aria-label="Patient testimonials">
+          <div class="carousel-viewport"><div class="carousel-track" aria-live="polite"></div></div>
+          <div class="carousel-controls">
+            <button class="icon-btn" type="button" data-carousel="prev" aria-label="Previous testimonial" data-icon="chevron-left"></button>
+            <div class="dots" role="group" aria-label="Choose testimonial"></div>
+            <button class="icon-btn" type="button" data-carousel="next" aria-label="Next testimonial" data-icon="chevron-right"></button>
+          </div>
+        </div>
+        <div class="center mt-2"><a class="link-arrow" href="reviews.html">Read all reviews <span data-icon="arrow-right"></span></a></div>
+      </div>
+    </section>
+
+    <!-- Insurance -->
+    <section class="section section--tight">
+      <div class="container text-center">
+        <h2 style="font-size:1.6rem">We work with most major insurance plans</h2>
+        <div class="insurer-list" id="home-insurers" style="justify-content:center"></div>
+        <a class="link-arrow" href="patients.html#insurance">Check your coverage <span data-icon="arrow-right"></span></a>
+      </div>
+    </section>
+
+    <!-- Blog preview -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">From the blog</span>
+          <h2>Tips for a healthier smile</h2>
+        </div>
+        <div class="grid grid-3" id="home-posts"></div>
+        <div class="center mt-2"><a class="btn btn-outline" href="blog.html">Visit the blog</a></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2>Ready for a healthier, brighter smile?</h2>
+            <p>Book online in two minutes, or call us and we'll find a time that works for you.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-light btn-lg" href="book.html" data-icon="calendar">Book Appointment</a>
+            <a class="btn btn-outline-light btn-lg" href="tel:+15550123456" data-icon="phone">(555) 012-3456</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/home.js" defer></script>
+</body>
+</html>

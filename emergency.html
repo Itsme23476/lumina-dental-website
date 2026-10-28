@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emergency Dental Care | Lumina Dental Care</title>
+  <meta name="description" content="Same-day emergency dental care in Springfield. First-aid steps for knocked-out teeth, toothaches, broken teeth and swelling.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="emergency">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero page-hero--emergency">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="patients.html">Patients</a><span>/</span><span aria-current="page">Emergency Care</span></nav>
+        <h1>Dental emergency? We're here to help today.</h1>
+        <p class="lead">We reserve same-day appointments every day for urgent care. Call now and we'll tell you exactly what to do.</p>
+        <div class="btn-group mt-2">
+          <a class="btn btn-light call-big" href="tel:+15550129111" data-icon="phone">(555) 012-9111</a>
+          <a class="btn btn-outline-light btn-lg" href="book.html?service=emergency-care">Book urgent visit online</a>
+        </div>
+        <p class="mt-1 mb-0" id="emergency-status" style="color:#fff;font-weight:600"></p>
+        <div class="alert hero-alert"><span data-icon="alert"></span><p><strong>Call 911 or go to the nearest ER</strong> if you have facial swelling that affects breathing or swallowing, uncontrolled bleeding, or a serious head or jaw injury.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Quick check</span>
+          <h2>How urgent is it?</h2>
+          <p>Answer a few yes/no questions for a recommendation. This tool is a guide, not a diagnosis. If in doubt, call us.</p>
+        </div>
+        <div class="form-card triage" id="triage" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <div class="grid grid-2">
+          <div class="urgency urgency--high reveal">
+            <h3 style="color:#991b1b">Call us right away for…</h3>
+            <ul class="check-list x-list mb-0">
+              <li data-icon="alert">A knocked-out or loosened adult tooth</li>
+              <li data-icon="alert">Severe toothache that keeps you awake</li>
+              <li data-icon="alert">Swelling of the gums, face or jaw</li>
+              <li data-icon="alert">A painful abscess or pimple on the gum</li>
+              <li data-icon="alert">Bleeding that won't stop after 20 minutes of pressure</li>
+            </ul>
+          </div>
+          <div class="urgency urgency--low reveal">
+            <h3>Usually can wait 24–48 hours</h3>
+            <ul class="check-list mb-0">
+              <li data-icon="clock">A small chip with no pain</li>
+              <li data-icon="clock">A lost filling or crown without severe pain</li>
+              <li data-icon="clock">Mild sensitivity to hot or cold</li>
+              <li data-icon="clock">A loose bracket or poking braces wire</li>
+              <li data-icon="clock">Food stuck between teeth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">First aid</span>
+          <h2>What to do right now</h2>
+        </div>
+        <div class="tabs">
+          <div class="tabs-list" role="tablist" aria-label="Dental emergencies">
+            <button class="tab" role="tab" id="t-knocked" aria-controls="p-knocked" aria-selected="true">Knocked-out tooth</button>
+            <button class="tab" role="tab" id="t-ache" aria-controls="p-ache" aria-selected="false" tabindex="-1">Severe toothache</button>
+            <button class="tab" role="tab" id="t-broken" aria-controls="p-broken" aria-selected="false" tabindex="-1">Chipped or broken tooth</button>
+            <button class="tab" role="tab" id="t-filling" aria-controls="p-filling" aria-selected="false" tabindex="-1">Lost filling or crown</button>
+            <button class="tab" role="tab" id="t-swelling" aria-controls="p-swelling" aria-selected="false" tabindex="-1">Swelling or abscess</button>
+            <button class="tab" role="tab" id="t-braces" aria-controls="p-braces" aria-selected="false" tabindex="-1">Braces problems</button>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-knocked" aria-labelledby="t-knocked">
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Pick the tooth up by the crown (the white part). Don't touch the root.</li><li>If it's dirty, rinse it briefly with milk or water. Don't scrub it or wrap it in tissue.</li><li>If you can, gently push it back into the socket and bite on a clean cloth.</li><li>If not, keep it in a cup of milk or inside your cheek (adults only).</li><li>Call us immediately. The best chance of saving the tooth is within 30–60 minutes.</li></ol></div>
+            <div class="alert alert--warn"><span data-icon="info"></span><p><strong>Baby teeth:</strong> don't try to put a knocked-out baby tooth back in. Call us so we can check for damage.</p></div></div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-ache" aria-labelledby="t-ache" hidden>
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Rinse your mouth with warm water.</li><li>Gently floss to remove any trapped food.</li><li>Hold a cold compress against your cheek for 15 minutes at a time.</li><li>Take an over-the-counter pain reliever as directed on the label.</li><li>Call us for a same-day appointment.</li></ol></div>
+            <div class="alert"><span data-icon="alert"></span><p><strong>Don't</strong> place aspirin or painkillers directly on the gum. It can burn the tissue.</p></div></div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-broken" aria-labelledby="t-broken" hidden>
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Save any broken pieces in milk or a clean container.</li><li>Rinse your mouth with warm water.</li><li>Use a cold compress to reduce swelling.</li><li>Cover sharp edges with sugar-free gum or dental wax.</li><li>Call us. Most chips can be repaired in one visit.</li></ol></div>
+            <div class="alert alert--info"><span data-icon="info"></span><p>Avoid chewing on that side until you've been seen.</p></div></div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-filling" aria-labelledby="t-filling" hidden>
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Keep the crown somewhere safe and bring it with you.</li><li>Clean the area gently and avoid very hot, cold or sweet foods.</li><li>Pharmacy dental cement can temporarily cover the area.</li><li>Book a visit within a day or two.</li></ol></div>
+            <div class="alert alert--info"><span data-icon="info"></span><p>Never use household glue to reattach a crown.</p></div></div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-swelling" aria-labelledby="t-swelling" hidden>
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Rinse with mild salt water (½ teaspoon of salt in a glass of warm water).</li><li>Apply a cold compress to the outside of your face.</li><li>Don't try to pop or drain an abscess yourself.</li><li>Call us the same day. Infections need prompt treatment.</li></ol></div>
+            <div class="alert"><span data-icon="alert"></span><p><strong>Go to the ER</strong> if swelling spreads to your eye or neck, or you have a fever and trouble swallowing or breathing.</p></div></div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="p-braces" aria-labelledby="t-braces" hidden>
+            <div class="split" style="align-items:start"><div><ol class="aid-steps"><li>Push a poking wire gently back with the eraser end of a pencil.</li><li>Cover sharp ends with orthodontic wax.</li><li>Save any loose brackets and bring them to your visit.</li><li>Call us to schedule a repair.</li></ol></div>
+            <div class="alert alert--info"><span data-icon="info"></span><p>Never cut a wire yourself unless instructed by our team.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container grid grid-3">
+        <div class="card reveal"><span class="icon-badge" data-icon="clock"></span><h3>During office hours</h3><p>Call the main line or walk in. We keep slots open every day for emergencies.</p><a class="link-arrow" href="contact.html#location">Find us <span data-icon="arrow-right"></span></a></div>
+        <div class="card reveal"><span class="icon-badge" data-icon="moon"></span><h3>After hours</h3><p>Call our emergency line. An on-call dentist will call you back, usually within 30 minutes.</p><a class="link-arrow" href="tel:+15550129111">(555) 012-9111 <span data-icon="arrow-right"></span></a></div>
+        <div class="card reveal"><span class="icon-badge" data-icon="calendar"></span><h3>Weekends &amp; holidays</h3><p>We're open Saturdays 9 AM–2 PM, and our on-call line runs on Sundays and holidays.</p><a class="link-arrow" href="book.html?service=emergency-care">Book urgent visit <span data-icon="arrow-right"></span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/emergency.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Services &amp; Pricing | Lumina Dental Care</title>
+  <meta name="description" content="Explore general, cosmetic, restorative, orthodontic, pediatric, surgical and emergency dental services with transparent pricing.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="services">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero page-hero--dark">
+      <svg class="page-hero-deco" viewBox="0 0 48 60" aria-hidden="true"><path fill="currentColor" d="M14 4C7 4 2 9 2 18c0 8 3 12 4 20 1 8 3 18 7 18s4-12 7-16c2-2 6-2 8 0 3 4 3 16 7 16s6-10 7-18c1-8 4-12 4-20 0-9-5-14-12-14-4 0-7 2-10 2s-6-2-10-2z"/></svg>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Services</span></nav>
+        <h1>Every treatment your smile needs, under one roof</h1>
+        <p class="lead">Browse our 18 services, compare starting prices and book the one you need, or ask us for a recommendation.</p>
+        <div class="search-input hero-search">
+          <span data-icon="search"></span>
+          <label class="visually-hidden" for="service-search">Search services</label>
+          <input type="search" id="service-search" placeholder="Search treatments, e.g. whitening, implants…" autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <div class="chips" id="service-filters" role="group" aria-label="Filter by category"></div>
+          <p class="result-count" id="service-count" aria-live="polite"></p>
+        </div>
+        <div class="grid grid-3" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Transparent pricing</span>
+          <h2>Know the cost before you commit</h2>
+          <p>Starting prices before insurance. You'll always receive a written estimate before treatment begins.</p>
+        </div>
+        <div class="table-wrap reveal">
+          <table>
+            <caption class="visually-hidden">Service starting prices and typical appointment length</caption>
+            <thead><tr><th scope="col">Treatment</th><th scope="col">Category</th><th scope="col">Typical visit</th><th scope="col">Starting at</th><th scope="col"><span class="visually-hidden">Action</span></th></tr></thead>
+            <tbody id="price-table"></tbody>
+          </table>
+        </div>
+        <div class="alert alert--info mt-2"><span data-icon="info"></span><p>Most PPO insurance plans cover preventive care at 80–100%. <a href="patients.html#insurance">Check your coverage</a> or explore <a href="patients.html#financing">0% financing</a>.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Need guidance?</span>
+          <h2>Not sure which treatment you need?</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card reveal"><span class="icon-badge" data-icon="calendar"></span><h3>Book a consultation</h3><p>Start with a comprehensive exam and we'll recommend the right next steps.</p><a class="btn btn-primary btn-sm" href="book.html?service=checkup-cleaning">Book an exam</a></div>
+          <div class="card reveal"><span class="icon-badge" data-icon="mail"></span><h3>Ask a question</h3><p>Send us a message and a team member will reply within one business day.</p><a class="btn btn-outline btn-sm" href="contact.html?subject=service">Send a message</a></div>
+          <div class="card reveal"><span class="icon-badge icon-badge--accent" data-icon="alert"></span><h3>In pain right now?</h3><p>We keep same-day appointments open for dental emergencies.</p><a class="btn btn-accent btn-sm" href="emergency.html">Get urgent help</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/services.js" defer></script>
+</body>
+</html>

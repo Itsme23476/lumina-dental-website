@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patient Reviews | Lumina Dental Care</title>
+  <meta name="description" content="Read verified patient reviews of Lumina Dental Care and share your own experience.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="reviews">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="about.html">About</a><span>/</span><span aria-current="page">Reviews</span></nav>
+        <h1>What our patients say</h1>
+        <p class="lead">Honest feedback from real patients. We read every review and use it to keep improving.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container grid grid-2" style="align-items:stretch">
+        <div class="card rating-summary reveal">
+          <div class="text-center">
+            <div class="rating-big" id="rating-avg">4.9</div>
+            <div id="rating-stars"></div>
+            <p class="muted mb-0" id="rating-total"></p>
+          </div>
+          <div class="rating-bars" id="rating-bars"></div>
+        </div>
+        <div class="card reveal" style="display:flex;flex-direction:column;justify-content:center">
+          <span class="icon-badge icon-badge--accent" data-icon="edit"></span>
+          <h2 style="font-size:1.6rem">Share your experience</h2>
+          <p>Your feedback helps other patients find the right dentist and helps us improve.</p>
+          <div class="btn-group">
+            <a class="btn btn-accent" href="#write-review">Write a review</a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Lumina+Dental+Care+Springfield" target="_blank" rel="noopener noreferrer" data-icon="external">Review us on Google</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="toolbar">
+          <div class="filters">
+            <div class="field"><label class="visually-hidden" for="filter-rating">Filter by rating</label>
+              <select id="filter-rating"><option value="0">All ratings</option><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select></div>
+            <div class="field"><label class="visually-hidden" for="filter-service">Filter by treatment</label>
+              <select id="filter-service"><option value="">All treatments</option></select></div>
+            <div class="field"><label class="visually-hidden" for="sort-reviews">Sort reviews</label>
+              <select id="sort-reviews"><option value="newest">Newest first</option><option value="highest">Highest rated</option><option value="lowest">Lowest rated</option></select></div>
+          </div>
+          <p class="result-count" id="review-count" aria-live="polite"></p>
+        </div>
+        <div class="grid grid-2" id="review-list"></div>
+        <div class="center mt-2"><button class="btn btn-outline" type="button" id="load-more">Load more reviews</button></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="write-review">
+      <div class="container" style="max-width:820px">
+        <div class="form-card">
+          <h2>Write a review</h2>
+          <p class="muted">Reviews are checked by our team before being published publicly.</p>
+          <form id="review-form" novalidate>
+            <div class="form-grid">
+              <div class="field full">
+                <span class="label" id="rating-label">Your rating <span class="req">*</span></span>
+                <fieldset class="star-input" aria-labelledby="rating-label">
+                  <input type="radio" id="star5" name="rating" value="5" required data-msg="Please choose a star rating."><label for="star5" title="5 stars" data-icon="star"><span class="visually-hidden">5 stars</span></label>
+                  <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars" data-icon="star"><span class="visually-hidden">4 stars</span></label>
+                  <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars" data-icon="star"><span class="visually-hidden">3 stars</span></label>
+                  <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars" data-icon="star"><span class="visually-hidden">2 stars</span></label>
+                  <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star" data-icon="star"><span class="visually-hidden">1 star</span></label>
+                </fieldset>
+              </div>
+              <div class="field"><label for="rv-name">Your name <span class="req">*</span></label><input type="text" id="rv-name" name="name" required autocomplete="name" placeholder="e.g. Jordan P."></div>
+              <div class="field"><label for="rv-service">Treatment received <span class="req">*</span></label><select id="rv-service" name="service" required data-msg="Please choose a treatment."><option value="">Select a treatment</option></select></div>
+              <div class="field full"><label for="rv-text">Your review <span class="req">*</span></label><textarea id="rv-text" name="text" required minlength="20" placeholder="Tell us about your visit (at least 20 characters)"></textarea></div>
+              <div class="field full"><label class="checkbox"><input type="checkbox" name="consent" required data-msg="Please confirm this is your genuine experience."> I confirm this review reflects my genuine experience as a patient.</label></div>
+            </div>
+            <button class="btn btn-primary btn-lg mt-2" type="submit" data-icon="send">Submit review</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/reviews.js" defer></script>
+</body>
+</html>

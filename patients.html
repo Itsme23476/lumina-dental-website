@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Patients, Insurance &amp; Financing | Lumina Dental Care</title>
+  <meta name="description" content="Everything you need for your first visit: what to expect, patient forms, insurance, financing and membership plans.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="patients">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">New Patients</span></nav>
+        <h1>Welcome to Lumina. Here's everything you need to know.</h1>
+        <p class="lead">What to expect, what to bring, how insurance works and how to make treatment affordable, all in one place.</p>
+        <div class="btn-group mt-2">
+          <a class="btn btn-accent" href="book.html?service=checkup-cleaning" data-icon="calendar">Book your first visit</a>
+          <a class="btn btn-outline" href="#forms" data-icon="file">Patient forms</a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="subnav" aria-label="On this page">
+      <div class="container">
+        <ul>
+          <li><a href="#first-visit">First visit</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#insurance">Insurance</a></li>
+          <li><a href="#financing">Financing</a></li>
+          <li><a href="#membership">Membership plans</a></li>
+          <li><a href="#policies">Office policies</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section patients-section" id="first-visit">
+      <div class="container">
+        <div class="section-head section-head--left reveal">
+          <span class="eyebrow">Your first visit</span>
+          <h2>What to expect (about 90 minutes)</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Warm welcome</h3><p>Check in, enjoy a coffee and meet your patient coordinator.</p></div>
+          <div class="step reveal"><h3>Digital imaging</h3><p>Low-radiation X-rays and photos so we can see the full picture.</p></div>
+          <div class="step reveal"><h3>Exam &amp; cleaning</h3><p>A comprehensive exam, gum health check and gentle cleaning.</p></div>
+          <div class="step reveal"><h3>Your plan</h3><p>We review findings together and give you a written cost estimate.</p></div>
+        </div>
+        <div class="grid grid-2 mt-2">
+          <div class="card reveal">
+            <h3>What to bring</h3>
+            <ul class="check-list mb-0">
+              <li data-icon="check">Photo ID and your insurance card</li>
+              <li data-icon="check">A list of current medications and allergies</li>
+              <li data-icon="check">Completed new patient forms (or arrive 15 minutes early)</li>
+              <li data-icon="check">Recent X-rays from a previous dentist, if available</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Feeling nervous?</h3>
+            <p>You're not alone. Tell us when you book and we'll schedule extra time, explain each step before we do it and agree on a "stop" signal. Nitrous oxide and oral sedation are available.</p>
+            <a class="link-arrow" href="faq.html">Read our FAQ <span data-icon="arrow-right"></span></a>
+          </div>
+        </div>
+        <div class="offer reveal">
+          <div><span class="badge badge--accent">New patient special</span><h3 class="mt-1">Exam, cleaning &amp; X-rays</h3><p>For new patients without insurance. Includes oral cancer screening.</p></div>
+          <div class="offer-price">$129</div>
+          <a class="btn btn-accent" href="book.html?service=checkup-cleaning">Claim offer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft patients-section" id="forms">
+      <div class="container">
+        <div class="section-head section-head--left reveal">
+          <span class="eyebrow">Patient forms</span>
+          <h2>Save time: complete your forms before you arrive</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="card doc-card reveal"><span class="icon-badge" data-icon="file"></span><h3>New Patient Registration</h3><p>Contact details, insurance information and emergency contact.</p><a class="btn btn-primary btn-sm" href="forms/registration.html" target="_blank" rel="noopener" data-icon="printer">Open &amp; print</a></div>
+          <div class="card doc-card reveal"><span class="icon-badge" data-icon="heart"></span><h3>Medical History</h3><p>Medications, allergies and health conditions that affect dental care.</p><a class="btn btn-primary btn-sm" href="forms/medical-history.html" target="_blank" rel="noopener" data-icon="printer">Open &amp; print</a></div>
+          <div class="card doc-card reveal"><span class="icon-badge" data-icon="calendar"></span><h3>Online check-in</h3><p>Prefer digital? Enter your details when booking online and skip the clipboard.</p><a class="btn btn-outline btn-sm" href="book.html">Book &amp; check in online</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section patients-section" id="insurance">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Insurance</span>
+          <h2>We work with most major dental plans</h2>
+          <p class="lead">We're in-network with many PPO plans and happy to file claims for out-of-network plans too. We'll verify your benefits before your visit.</p>
+          <div class="insurer-list" id="insurer-list"></div>
+          <p class="hint">Plan participation can change. Please call to confirm your specific plan.</p>
+        </div>
+        <div class="form-card reveal">
+          <h3>Check your coverage</h3>
+          <p class="muted">Type your insurance provider to see if we're in network.</p>
+          <form id="insurance-form" novalidate>
+            <div class="field">
+              <label for="insurer-input">Insurance provider <span class="req">*</span></label>
+              <input type="text" id="insurer-input" name="insurer" list="insurer-options" placeholder="e.g. Delta Dental" required data-msg="Please enter your insurance provider." autocomplete="off">
+              <datalist id="insurer-options"></datalist>
+            </div>
+            <button class="btn btn-primary btn-block mt-1" type="submit">Check coverage</button>
+          </form>
+          <div class="checker-result" id="insurance-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft patients-section" id="financing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Financing</span>
+          <h2>Estimate your monthly payment</h2>
+          <p>0% APR for plans up to 12 months. Extended plans available for larger treatments, subject to approval.</p>
+        </div>
+        <div class="calc reveal">
+          <div class="calc-inputs">
+            <div>
+              <div class="range-head"><label class="label" for="calc-amount">Treatment cost</label><output id="calc-amount-out" for="calc-amount">$3,000</output></div>
+              <input type="range" id="calc-amount" min="300" max="20000" step="100" value="3000">
+              <div class="range-scale"><span>$300</span><span>$20,000</span></div>
+            </div>
+            <div>
+              <span class="label" id="term-label">Payment term</span>
+              <div class="term-options chips mt-1" role="group" aria-labelledby="term-label">
+                <button class="chip" type="button" data-term="6" aria-pressed="false">6 months</button>
+                <button class="chip" type="button" data-term="12" aria-pressed="true">12 months</button>
+                <button class="chip" type="button" data-term="24" aria-pressed="false">24 months</button>
+                <button class="chip" type="button" data-term="36" aria-pressed="false">36 months</button>
+                <button class="chip" type="button" data-term="48" aria-pressed="false">48 months</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="calc-insurance">Expected insurance coverage</label>
+              <select id="calc-insurance">
+                <option value="0">No insurance</option>
+                <option value="0.2">20%</option>
+                <option value="0.5" selected>50%</option>
+                <option value="0.8">80%</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-result" aria-live="polite">
+            <span>Estimated monthly payment</span>
+            <div class="big" id="calc-monthly">$125</div>
+            <dl>
+              <dt>Your portion</dt><dd id="calc-portion">$1,500</dd>
+              <dt>APR</dt><dd id="calc-apr">0%</dd>
+              <dt>Total interest</dt><dd id="calc-interest">$0</dd>
+              <dt>Total paid</dt><dd id="calc-total">$1,500</dd>
+            </dl>
+            <a class="btn btn-accent" href="contact.html?subject=billing">Ask about financing</a>
+            <small>Estimates for illustration only. Actual terms depend on credit approval by our financing partner.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section patients-section" id="membership">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">No insurance? No problem.</span>
+          <h2>Lumina membership plans</h2>
+          <p>Simple monthly pricing, no deductibles, no waiting periods and no annual maximums.</p>
+        </div>
+        <div class="grid grid-3" id="plans"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft patients-section" id="policies">
+      <div class="container" style="max-width:860px">
+        <div class="section-head reveal">
+          <span class="eyebrow">Office policies</span>
+          <h2>Good to know</h2>
+        </div>
+        <div class="accordion" id="policy-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/patients.js" defer></script>
+</body>
+</html>

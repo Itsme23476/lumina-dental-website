@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Patient Registration Form | Lumina Dental Care</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/print-forms.css">
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../patients.html#forms"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to patient forms</a>
+    <span>Print this form, or save it as a PDF to fill in digitally.</span>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+  <main class="sheet">
+    <header>
+      <div><h1>New Patient Registration</h1><p>Please complete and bring to your first visit.</p></div>
+      <div class="brand"><strong>Lumina Dental Care</strong>1200 Harbor Avenue, Suite 200<br>Springfield, ST 01234 · (555) 012-3456</div>
+    </header>
+
+    <h2>Patient information</h2>
+    <div class="row" style="--cols:3"><div class="line"><span></span>First name</div><div class="line"><span></span>Middle initial</div><div class="line"><span></span>Last name</div></div>
+    <div class="row" style="--cols:3"><div class="line"><span></span>Date of birth</div><div class="line"><span></span>Preferred name</div><div class="line"><span></span>Pronouns (optional)</div></div>
+    <div class="row" style="--cols:1"><div class="line"><span></span>Street address</div></div>
+    <div class="row" style="--cols:3"><div class="line"><span></span>City</div><div class="line"><span></span>State</div><div class="line"><span></span>ZIP</div></div>
+    <div class="row"><div class="line"><span></span>Mobile phone</div><div class="line"><span></span>Email</div></div>
+    <p style="font-size:.9rem;margin:.75rem 0 .4rem">Preferred contact method:</p>
+    <div class="checks"><label><span class="box"></span>Text</label><label><span class="box"></span>Email</label><label><span class="box"></span>Phone call</label></div>
+
+    <h2>Emergency contact</h2>
+    <div class="row" style="--cols:3"><div class="line"><span></span>Name</div><div class="line"><span></span>Relationship</div><div class="line"><span></span>Phone</div></div>
+
+    <h2>Dental insurance</h2>
+    <div class="row"><div class="line"><span></span>Insurance company</div><div class="line"><span></span>Member ID</div></div>
+    <div class="row"><div class="line"><span></span>Group number</div><div class="line"><span></span>Policy holder name &amp; date of birth</div></div>
+    <div class="row"><div class="line"><span></span>Employer</div><div class="line"><span></span>Relationship to policy holder</div></div>
+
+    <h2>Dental history</h2>
+    <div class="row"><div class="line"><span></span>Previous dentist</div><div class="line"><span></span>Date of last visit</div></div>
+    <div class="row" style="--cols:1"><div class="line"><span></span>Reason for today's visit</div></div>
+    <p style="font-size:.9rem;margin:.75rem 0 .4rem">How did you hear about us?</p>
+    <div class="checks"><label><span class="box"></span>Friend / family</label><label><span class="box"></span>Google</label><label><span class="box"></span>Insurance directory</label><label><span class="box"></span>Social media</label><label><span class="box"></span>Drove by</label><label><span class="box"></span>Other</label></div>
+
+    <h2>Consent</h2>
+    <p class="note">I certify that the information above is correct. I authorize Lumina Dental Care to release information necessary to process insurance claims, and I understand I am responsible for any balance not covered by insurance.</p>
+    <div class="row"><div class="line"><span></span>Signature of patient (or parent/guardian)</div><div class="line"><span></span>Date</div></div>
+  </main>
+</body>
+</html>

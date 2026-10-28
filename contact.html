@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Lumina Dental Care</title>
+  <meta name="description" content="Contact Lumina Dental Care: phone, email, office hours, directions and an online message form.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header-mount"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Contact</span></nav>
+        <h1>We'd love to hear from you</h1>
+        <p class="lead">Questions about treatment, insurance or billing? Send a message and we'll reply within one business day.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container grid grid-4">
+        <div class="card info-card"><span class="icon-badge" data-icon="phone"></span><h3>Call us</h3><a href="tel:+15550123456">(555) 012-3456</a><p class="muted">Mon–Sat during office hours</p></div>
+        <div class="card info-card"><span class="icon-badge" data-icon="mail"></span><h3>Email</h3><a href="mailto:hello@luminadental.example">hello@luminadental.example</a><p class="muted">Replies within 1 business day</p></div>
+        <div class="card info-card"><span class="icon-badge" data-icon="pin"></span><h3>Visit</h3><a href="#location">1200 Harbor Avenue, Suite 200</a><p class="muted">Springfield, ST 01234</p></div>
+        <div class="card info-card"><span class="icon-badge icon-badge--accent" data-icon="alert"></span><h3>Emergency</h3><a href="tel:+15550129111">(555) 012-9111</a><p class="muted"><a href="emergency.html">Emergency guide</a></p></div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container contact-grid">
+        <div class="form-card" id="contact-card">
+          <h2>Send us a message</h2>
+          <p class="muted">Fields marked <span class="req">*</span> are required. Please don't include detailed medical information.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Full name <span class="req">*</span></label><input type="text" id="c-name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="c-email">Email <span class="req">*</span></label><input type="email" id="c-email" name="email" autocomplete="email" required></div>
+              <div class="field"><label for="c-phone">Phone</label><input type="tel" id="c-phone" name="phone" autocomplete="tel" placeholder="(555) 555-5555"></div>
+              <div class="field"><label for="c-subject">Subject <span class="req">*</span></label>
+                <select id="c-subject" name="subject" required data-msg="Please choose a subject.">
+                  <option value="">Choose a subject</option>
+                  <option value="general">General question</option>
+                  <option value="appointment">Appointments</option>
+                  <option value="service">Question about a treatment</option>
+                  <option value="insurance">Insurance</option>
+                  <option value="billing">Billing &amp; financing</option>
+                  <option value="membership">Membership plans</option>
+                  <option value="careers">Careers</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+              <div class="field full"><span class="label">Preferred contact method</span>
+                <div class="radio-group">
+                  <label class="radio"><input type="radio" name="method" value="email" checked> Email</label>
+                  <label class="radio"><input type="radio" name="method" value="phone"> Phone</label>
+                  <label class="radio"><input type="radio" name="method" value="text"> Text message</label>
+                </div>
+              </div>
+              <div class="field full"><label for="c-message">Message <span class="req">*</span></label><textarea id="c-message" name="message" required minlength="10"></textarea></div>
+              <div class="field full"><label class="checkbox"><input type="checkbox" name="consent" required data-msg="Please agree so we can respond to you."> I agree to be contacted about my enquiry and have read the <a href="privacy.html">privacy policy</a>.</label></div>
+            </div>
+            <button class="btn btn-primary btn-lg mt-2" type="submit" data-icon="send">Send message</button>
+          </form>
+          <div class="form-success" id="contact-success" hidden>
+            <div class="success-icon" data-icon="check"></div>
+            <h2>Message sent!</h2>
+            <p class="muted" id="contact-success-text"></p>
+            <div class="btn-group" style="justify-content:center"><button class="btn btn-outline" type="button" id="contact-again">Send another message</button><a class="btn btn-primary" href="index.html">Back to home</a></div>
+          </div>
+        </div>
+
+        <aside class="grid" style="gap:1.5rem">
+          <div class="card">
+            <h3>Office hours</h3>
+            <span class="open-status" id="open-status"><span class="status-dot"></span><span></span></span>
+            <table class="hours-table"><tbody id="hours-body"></tbody></table>
+          </div>
+          <div class="card">
+            <h3>Direct lines</h3>
+            <ul class="check-list mb-0">
+              <li data-icon="calendar"><span><strong>Scheduling</strong><br><a href="tel:+15550123456">(555) 012-3456</a> ext. 1</span></li>
+              <li data-icon="card"><span><strong>Billing &amp; insurance</strong><br><a href="tel:+15550123456">(555) 012-3456</a> ext. 2</span></li>
+              <li data-icon="users"><span><strong>Careers</strong><br><a href="mailto:careers@luminadental.example">careers@luminadental.example</a></span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="location">
+      <div class="container">
+        <div class="map">
+          <svg viewBox="0 0 1200 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="1200" height="460" fill="#e3f1ec"/>
+            <path d="M0 380C200 340 300 420 520 390S900 300 1200 340V460H0Z" fill="#bfe3f2"/>
+            <rect x="120" y="60" width="220" height="140" rx="18" fill="#cdebd9"/>
+            <rect x="900" y="40" width="200" height="120" rx="18" fill="#cdebd9"/>
+            <g stroke="#fff" stroke-linecap="round" fill="none">
+              <path d="M0 250H1200" stroke-width="28"/>
+              <path d="M740 0V460" stroke-width="22"/>
+              <path d="M420 0C440 160 400 260 470 460" stroke-width="16"/>
+              <path d="M0 110H1200" stroke-width="12"/>
+              <path d="M1000 0L860 460" stroke-width="12"/>
+            </g>
+            <g fill="#d4e4ea"><rect x="560" y="140" width="80" height="70" rx="8"/><rect x="780" y="140" width="110" height="70" rx="8"/><rect x="560" y="280" width="140" height="60" rx="8"/><rect x="780" y="280" width="70" height="60" rx="8"/><rect x="200" y="280" width="160" height="70" rx="8"/></g>
+            <text x="30" y="240" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#7c93a6">HARBOR AVENUE</text>
+            <text x="752" y="40" font-family="system-ui,sans-serif" font-size="15" font-weight="600" fill="#7c93a6" transform="rotate(90 752 40)">MAPLE ST</text>
+          </svg>
+          <span class="map-pin" data-icon="pin"></span>
+          <div class="map-card">
+            <h3>Lumina Dental Care</h3>
+            <p class="muted">1200 Harbor Avenue, Suite 200<br>Springfield, ST 01234</p>
+            <ul class="check-list" style="font-size:.92rem">
+              <li data-icon="car">Free parking in the attached garage</li>
+              <li data-icon="navigation">Bus routes 4 &amp; 12 stop outside</li>
+            </ul>
+            <div class="btn-group">
+              <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=1200+Harbor+Avenue+Springfield" target="_blank" rel="noopener noreferrer" data-icon="navigation">Get directions</a>
+              <button class="btn btn-outline btn-sm" type="button" id="copy-address" data-icon="copy">Copy address</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-mount"></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/art.js" defer></script>
+  <script src="assets/js/cards.js" defer></script>
+  <script src="assets/js/layout.js" defer></script>
+  <script src="assets/js/pages/contact.js" defer></script>
+</body>
+</html>
